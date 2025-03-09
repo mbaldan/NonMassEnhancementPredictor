@@ -1,13 +1,9 @@
 name: resnet
 channels:
   - pytorch
-  - anaconda
-  - nvidia
   - defaults
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
-  - https://repo.anaconda.com/pkgs/msys2
 dependencies:
+<<<<<<< HEAD
   - anyio=4.6.2
   - argon2-cffi=21.3.0
   - argon2-cffi-bindings=21.2.0
@@ -246,3 +242,11 @@ dependencies:
       - watchdog==6.0.0
       - werkzeug==3.1.3
 prefix: C:\Users\BALDAN\anaconda3\envs\resnet
+=======
+  - python=3.9
+  - pytorch=2.5.1 # or the version you want.
+  - torchvision=0.20.1 # or the version you want.
+  - torchaudio=2.5.1 # or the version you want.
+  - nibabel
+  - streamlit
+>>>>>>> 1131b8cadb3da125244058f8bac40198c575531e
