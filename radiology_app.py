@@ -1,3 +1,4 @@
+pip install torch torchvision torchaudio
 import sys
 import os
 import torch
