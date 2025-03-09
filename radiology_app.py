@@ -1,11 +1,5 @@
 import sys
 import os
-
-print(f"✅ Python Version: {sys.version}")
-print(f"✅ Python Executable: {sys.executable}")
-print(f"✅ Conda Env: {os.environ.get('CONDA_DEFAULT_ENV', 'None')}")
-print(f"✅ Torch Version: {torch.__version__}")
-
 import torch
 import torch.nn as nn
 import nibabel as nib
