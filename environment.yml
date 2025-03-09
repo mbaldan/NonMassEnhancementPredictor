@@ -8,5 +8,4 @@ dependencies:
   - pytorch=2.5.1 # or the version you want.
   - torchvision=0.20.1 # or the version you want.
   - torchaudio=2.5.1 # or the version you want.
-  - cpuonly # Remove if using a GPU
   - streamlit
