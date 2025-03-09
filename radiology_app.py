@@ -1,4 +1,20 @@
 import os
+
+
+import os
+
+# Check if torch is installed
+try:
+    import torch
+    print("✅ PyTorch is already installed:", torch.__version__)
+except ImportError:
+    print("⚠️ PyTorch is missing! Installing now...")
+    os.system("pip install torch torchvision torchaudio")
+    import torch
+    print("✅ PyTorch Installed:", torch.__version__)
+
+
+
 import torch
 import torch.nn as nn
 import nibabel as nib
