@@ -1,8 +1,8 @@
 name: resnet
 channels:
   - pytorch
-  - conda-forge
   - defaults
+  - conda-forge
 dependencies:
   - python=3.9
   - pytorch=2.5.1 # or the version you want.
