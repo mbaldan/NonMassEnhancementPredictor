@@ -2,12 +2,14 @@ name: resnet
 channels:
   - pytorch
   - defaults
+  - conda-forge # Add conda-forge
 dependencies:
   - python=3.9
+  - pip #add pip as a dependency
   - pytorch=2.5.1
   - torchvision=0.20.1
   - torchaudio=2.5.1 # Remove if not used
-  - nibabel=5.3.2
+  - nibabel
   - streamlit=1.43.1
   - numpy=1.26.4
   - pip:
