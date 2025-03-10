@@ -55,7 +55,10 @@ def get_ensemble_prediction(patient_data, model_paths, device):
     all_probs = []
     for model_path in model_paths:
         model = ResNet3DForClassification(num_classes=2).to(device)
-        model.load_state_dict(torch.load(model_path))
+        
+        # Ensure model loads correctly on the available device (CPU/GPU)
+        model.load_state_dict(torch.load(model_path, map_location=device))
+        
         model.eval()
         with torch.no_grad():
             output = model(patient_data)
