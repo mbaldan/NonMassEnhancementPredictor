@@ -72,7 +72,8 @@ def get_ensemble_prediction(patient_data, model_paths, device):
     return mean_probs, predicted_class
 
 # Streamlit App
-st.title("Radiology AI Classifier")
+st.title("Non Mass Enhancement Tool - Breast MRI AI Tool")
+st.write("Prepared in collaboration with Ege University Radiology member Dr Serhat Akış and Acıbadem University Bioinformatics member Dr Muhammet Baldan to be converted into a product in the future.")
 st.write("Upload a **.nii** file to classify it as **Benign** or **Malignant**.")
 
 # File uploader
